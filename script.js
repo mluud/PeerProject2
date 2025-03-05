@@ -91,3 +91,21 @@ getProducts().then((products) => {
   displayProducts(currentPage);
   setupPagination();
 });
+// sorting code
+
+function sortProducts(order) {
+  if (order === "price-low") {
+    productList.sort((a, b) => a.price - b.price);
+  } else if (order === "price-high") {
+    productList.sort((a, b) => b.price - a.price);
+  }
+  currentPage = 1;
+  displayProducts(currentPage);
+}
+function setupPriceSort() {
+  const priceSort = document.getElementById("price-sort");
+  priceSort.addEventListener("change", (event) => {
+    sortProducts(event.target.value);
+  });
+}
+setupPriceSort();
