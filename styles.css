@@ -7,7 +7,7 @@ body {
   background-color: #f9f9f9;
   color: #333;
 }
-  
+
 header {
   background-color: #333;
   color: #fff;
@@ -25,13 +25,13 @@ nav {
   padding: 10px;
 }
 
-.settings{
+.settings {
   display: flex;
   align-items: center; /* Vertically center items */
   padding: 20px;
 }
 
-#language-select{
+#language-select {
   margin-right: 10px;
 }
 
@@ -64,7 +64,7 @@ footer {
 
 /* Hero Section */
 .hero {
-  background-color: #F0F8FF;
+  background-color: #f0f8ff;
   color: #333333;
   padding: 50px 20px;
   text-align: center;
@@ -78,12 +78,12 @@ footer {
   font-size: 1.2rem;
 }
 
-.hero .btn{
-  background-color: #FF6600;
+.hero .btn {
+  background-color: #ff6600;
 }
 
 .hero .btn:hover {
-  background-color: #E65C00;
+  background-color: #e65c00;
 }
 
 .btn {
@@ -157,41 +157,61 @@ footer {
   padding: 20px;
 }
 
-
 /* Dark Mode */
 body.dark-mode {
   background-color: #121212;
-  color: #E0E0E0;
+  color: #e0e0e0;
 }
 
-.dark-mode header, 
+.dark-mode header,
 .dark-mode footer {
-  background-color: #1E1E1E;
+  background-color: #1e1e1e;
 }
 
 .dark-mode .hero {
-  background-color: #1A1A2E; 
-  color: #E0E0E0; 
+  background-color: #1a1a2e;
+  color: #e0e0e0;
 }
 
 .dark-mode .hero .btn {
-  background-color: #FF9800; 
+  background-color: #ff9800;
 }
 
 .dark-mode .hero .btn:hover {
-  background-color: #E68A00; 
+  background-color: #e68a00;
 }
 
 .dark-mode .card {
-  background-color: #1E1E1E;
+  background-color: #1e1e1e;
   border: 1px solid #333;
 }
 
 .dark-mode a {
-  color: #2196F3;
+  color: #2196f3;
 }
 
 .dark-mode .btn {
-  background-color: #FF9800;
+  background-color: #ff9800;
   color: black;
+}
+/* for pagination button */
+/* styles.css */
+.pagination {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+}
+
+.pagination button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
 }
